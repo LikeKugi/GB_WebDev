@@ -85,7 +85,18 @@ a {
     overflow: hidden; /* для того, чтобы не наезжал на float */
 }
 .footer-block {
-    height: 50px;
+    height: 20px;
     background-color: red;
     clear: both; /* для того, чтобы не наезжал на float */
+}
+.test-table {
+    margin: 20px;;
+    width: 50%;
+    height: 200px;
+    border: 1px solid black;
+    border-collapse: collapse; /* чтобы не было двойных рамок */
+}
+.test-table td {
+    vertical-align: middle;
+    border: 1px solid black;
 }
