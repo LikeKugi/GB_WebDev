@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Selectors in CSS</title>
+</head>
+
+<body>
+    <a href="index.html">Index</a>
+    <h1>Selector</h1>
+    <p>Селектор - элемент HTML, который необходимо изменить</p>
+    <h2>Виды селекторов</h2>
+    <ol>
+        <li class="border">
+            <h3>Тэги</h3>
+            <p>в CSS файле выбирается просто тэг</p>
+            <pre>
+                /* Выбрать все тэги h1 */
+                h1 {
+                    color: blue;
+                }
+            </pre>
+        </li>
+        <li class="border">
+            <h3>ID</h3>
+            <p>Выбрать элемент с определённым ID</p>
+            <pre>
+                /* Выбрать тэг с определённым ID */
+                #first {
+                    background: #ccc;
+                }
+            </pre>
+            <p>ID - уникальный эоемент на странице. Подходит для стилизации конкретного блока. Не рекомендуется для
+                стилизации</p>
+        </li>
+        <li class="border">
+            <h3>Class</h3>
+            <p>Выбрать элементы с определенным классом</p>
+            <pre>
+                /* Выбрать все тэги на странице с определённым классом */
+                .border {
+                    border: 1px solid black;
+                }
+            </pre>
+            <p>Классы могут совпадать. У одного элемента может быть несколько классов. Более гибкие возможности для
+                стилизации</p>
+        </li>
+
+    </ol>
+</body>
+
+</html>

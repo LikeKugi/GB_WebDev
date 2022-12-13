@@ -1,0 +1,16 @@
+/*
+* Comment
+* Can add using `CTRL + /`
+*/
+
+h1 {
+    text-align: center;
+    color: darkblue;
+}
+.border {
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: rgb(220, 220, 220);
+}

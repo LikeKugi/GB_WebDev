@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Базовые свойства css</title>
+</head>
+
+<body>
+    <a href="index.html">Index</a>
+    <h1>Базовые свойства стилей</h1>
+    <ol>
+        <li class="border">
+            <h3>Единицы измерения</h3>
+            <h4>Относительные</h4>
+            <p>Предпочтительно применяются. Размеры относительно экрана</p>
+            <ul>
+                <li>px - пиксель</li>
+                <li>% - процент</li>
+                <li>em - Высота текущего шрифта (16px - по стандарту)</li>
+                <li>rem - Относительно главного шрифта</li>
+                <li>...</li>
+            </ul>
+            <h4>Абсолютные</h4>
+            <p>Редко применяются. Не адаптивны</p>
+            <ul>
+                <li>cm - сантиметр</li>
+                <li>mm - миллиметр</li>
+                <li>in - дюйм</li>
+                <li>pt - пункт</li>
+                <li>...</li>
+            </ul>
+        </li>
+        <li class="border">
+            <h3>Единицы измерения цвета</h3>
+            <ul>
+                <li>
+                    <h4>Именованные</h4>
+                </li>
+                <li>
+                    <h4>Функциональные RGBA</h4>
+                </li>
+                <li>
+                    <h4>Шестнадцатиричные RGB</h4>
+                </li>
+            </ul>
+        </li>
+        <li class="border">
+            <h3>Параметры ширины и высоты</h3>
+            <p>Редко задаются к текстовым элементам</p>
+            <ul>
+                <li>
+                    <h4>Ширина</h4>
+                    <pre>
+                        h1 {
+                            width: 300px;
+                        }
+                    </pre>
+                </li>
+                <li>
+                    <h4>Высота</h4>
+                    <pre>
+                        h1 {
+                            height: 200 px;
+                        }
+                    </pre>
+                </li>
+            </ul>
+        </li>
+        <li class="border">
+            <h3>Фон элемента</h3>
+            <ul>
+                <li>
+                    <h4>Цвет фона</h4>
+                    <pre>
+                        background-color: #ff0;
+                    </pre>
+                </li>
+                <li>
+                    <h4>Изображение</h4>
+                    <pre>
+                        background-image: url(path)
+                    </pre>
+                </li>
+                <li>
+                    <h4>Повтор картинки</h4>
+                    <pre>
+                        background-repeat: no-repeat;
+                    </pre>
+                    <ul>
+                        <li>repeat-x</li>
+                        <li>repeat-y</li>
+                        <li>no-repeat</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>Позиция заднего фона</h4>
+                    <pre>
+                        background-position: top;
+                    </pre>
+                    <ul>
+                        <li>top</li>
+                        <li>bottom</li>
+                        <li>left</li>
+                        <li>right</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>Фиксированный фон</h4>
+                    <pre>
+                        background-attachment: fixed
+                    </pre>
+                </li>
+                <li>
+                    <h4>Размер</h4>
+                    <pre>
+                        background-size: cover;
+                    </pre>
+                    <ul>
+                        <li>cover - растянуть</li>
+                        <li>contain - чтобы поместить полностью по ширине или по высоте</li>
+                        <li>100% - в процентах</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="border">
+            <h3>Добавление рамки</h3>
+            <ul>
+                <li>
+                    <h4>Цвет</h4>
+                    <pre>
+                        border-color: red;
+                    </pre>
+                </li>
+                <li>
+                    <h4>Стиль</h4>
+                    <pre>
+                        border-style: solid;
+                    </pre>
+                    <ul>
+                        <li>solid</li>
+                        <li>dotted</li>
+                        <li>dashed</li>
+                        <li>groove</li>
+                        <li>ridge</li>
+                        <li>double</li>
+                        <li>inset</li>
+                        <li>outset</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>Ширина</h4>
+                    <pre>
+                        border-width: 2px;
+                    </pre>
+                </li>
+            </ul>
+        </li>
+    </ol>
+
+</body>
+
+</html>
