@@ -2,10 +2,13 @@
 * Comment
 * Can add using `CTRL + /`
 */
-
+body {
+    font-family: "Roboto", sans-serif;
+}
 h1 {
     text-align: center;
     color: darkblue;
+    text-transform: uppercase;
 }
 .border {
     border-radius: 5px;
@@ -13,4 +16,13 @@ h1 {
     margin: 5px;
     padding: 5px 10px;
     background-color: rgb(220, 220, 220);
+}
+h3 {
+    text-transform: capitalize;
+}
+h4 {
+    text-transform: capitalize;
+}
+a {
+    text-transform: lowercase;
 }
