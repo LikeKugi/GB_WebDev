@@ -1,0 +1,80 @@
+* {
+    margin: 10;
+    padding: 10;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(230, 230, 230);
+}
+.header {
+    background-color: rgb(243, 243, 243);
+    position: sticky;
+    top: 0;
+    margin: 0;
+    padding: 5px 10px;
+}
+.navigations, .border {
+    box-sizing: border-box; /*  не учитывать padding и marging */
+    max-width: 1000px;
+    margin: 15px auto;
+}
+.navigations {
+    display: flex;
+}
+.nv-menu {
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px;
+    margin: 0 2px;
+    text-decoration: none;
+    line-height: 100%;
+    text-align: center;
+}
+.nv-menu:hover {
+    background-color: rgb(0, 212, 212);
+    font-weight: bold;
+    color: rgb(212, 6, 184);
+}
+h1 {
+    text-align: center;
+    color: darkblue;
+    text-transform: uppercase;
+}
+.border {
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px 10px;
+    background-color: rgb(255, 255, 255);
+}
+h2, h3, h4 {
+    text-transform: capitalize;
+}
+a {
+    text-transform: lowercase;
+}
+.f-word {
+    text-transform: capitalize;
+}
+.specials {
+    padding: 5px;
+}
+.flex-scheme {
+    display: block;
+    margin: 0 auto;
+}
+.container {
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.flex-item {
+    height: 150px;
+    width: 150px;
+    border: 1px dashed blue;
+    text-align: center;
+}
