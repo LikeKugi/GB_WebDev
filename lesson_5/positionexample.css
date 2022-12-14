@@ -1,0 +1,15 @@
+.content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.block {
+    height: 350px;
+    border: 1px solid #000;
+    position: relative;
+}
+.item {
+    background-color: gray;
+    height: 50px;
+    position: sticky;
+    top: 0;
+}

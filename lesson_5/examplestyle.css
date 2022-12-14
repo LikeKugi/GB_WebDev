@@ -27,6 +27,7 @@ body{
 }
 .content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .block {
@@ -35,4 +36,22 @@ body{
     background-color: aquamarine;
     border: 1px solid darkgray;
     border-radius: 5px;
+}
+.block1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.subflex {
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    background-color: powderblue;
+    border: 1px solid lightblue;
+    border-radius: 15px;
+}
+.subflex:hover {
+    background-color: cadetblue;
 }
