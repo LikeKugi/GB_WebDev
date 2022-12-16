@@ -1,0 +1,32 @@
+.content {
+    display: flex;
+    justify-content: space-around;
+}
+.product {
+    width: 180px;
+    border: 1px solid #000;
+    padding: 16px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 500px) {
+    .content {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+    .product{
+        width: 100%;
+        display: flex;
+    }
+}
+
+@media (max-width: 319px) {
+    .product{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}

@@ -1,0 +1,27 @@
+.header {
+    height: 100px;
+    background-color: gray;
+}
+.bottom {
+    background-color: darkred;
+    width: 150px;
+    height: 50px;
+}
+@media (max-width: 500px) {
+    .header {
+        height: 100px;
+        background-color: aqua;
+        border: 1px solid #000;
+    }
+}
+@media (min-width: 1000px) {
+    .bottom{
+        width: 800px;
+    }
+}
+@media (min-width: 320px) and (max-width:500px) {
+    body {
+        background-color: blueviolet;
+    }
+
+}
