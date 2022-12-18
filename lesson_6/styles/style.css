@@ -13,7 +13,7 @@ body {
 .container {
     box-sizing: border-box;
     position: relative;
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -38,7 +38,7 @@ body {
 
 
 .top {
-    height: 768px;
+    min-height: 768px;
     background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
 }
 
@@ -61,6 +61,8 @@ body {
     background-image: url(../img/illustration.png);
     background-position: right center;
     background-repeat: no-repeat;
+    background-size: 44%;
+
 }
 
 .top-heading {
@@ -280,4 +282,113 @@ hr {
         padding-left: 32px;
         padding-right: 32px;
     }
+
+    .top-info {
+        background-position: right 280px;
+    }
+
+    .card-box {
+        flex-direction: column;
+    }
+
+    .card {
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 667px) {
+    .top {
+        min-height: 376px;
+        padding-bottom: 41px;
+        box-sizing: border-box;
+    }
+
+    .header-nav {
+        padding-top: 24px;
+    }
+
+    .top-info {
+        padding-top: 36px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: none;
+    }
+
+    .top-heading {
+        width: 100%;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        margin-bottom: 12px;
+    }
+
+    .top-text {
+        width: 100%;
+    }
+
+    .top-button {
+        width: auto;
+        height: auto;
+        font-size: 12px;
+        line-height: 26px;
+        padding: 0 8px;
+    }
+
+    .heading {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .what-we-do {
+        padding-top: 48px;
+    }
+
+    .card-box {
+        padding-top: 32px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .text-project {
+        width: 100%;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.05em;
+    }
+
+    .project-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .project-text-right {
+        top: 16px;
+        right: 16px;
+    }
+
+    .project-parent {
+        margin-top: 16px;
+        flex-direction: column;
+    }
+
+    .project-item-left {
+        margin: auto;
+        margin-bottom: 16px;
+    }
+
+    .project-text-left {
+        top: 16px;
+        left: 16px;
+    }
+
 }
