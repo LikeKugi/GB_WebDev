@@ -294,6 +294,22 @@ hr {
     .card {
         margin-bottom: 32px;
     }
+
+    .footer-top {
+        margin: 47px 124px;
+    }
+
+    .footer-text-box {
+        width: 336px;
+    }
+
+    .footer-list {
+        flex-direction: column;
+    }
+
+    .footer-button {
+        padding: 0 20px;
+    }
 }
 
 @media (max-width: 667px) {
@@ -391,4 +407,45 @@ hr {
         left: 16px;
     }
 
+    .footer {
+        padding-bottom: 32px;
+    }
+
+    .footer-top {
+        margin: 16px;
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+
+    .footer-text-box {
+        width: 100%;
+    }
+
+    .footer-heading {
+        margin: 0 auto;
+    }
+
+    .footer-text {
+        margin: 32px auto;
+    }
+
+    .footer-list::before {
+        display: inline-block;
+    }
+
+    .footer-list {
+        margin-top: 17px;
+        display: inline-block;
+    }
+
+    .footer-info {
+        flex-direction: column;
+        margin-top: 32px;
+        list-style: square;
+        list-style-type: circle;
+    }
+
+    .footer-copy-text {
+        text-align: center;
+    }
 }
