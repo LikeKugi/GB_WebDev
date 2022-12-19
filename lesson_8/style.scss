@@ -1,3 +1,7 @@
+$width_site: 1300px;
+$footer_color: #222;
+$border_width: 1px;
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +12,7 @@
     min-height: 100vh;
 }
 .container {
-    max-width: 1200px;
+    max-width: $width_site;
     margin: 0 auto;
     padding: 30px 50px;
 }
@@ -16,13 +20,17 @@
     background-color: lightgray;
     padding-top: 10px;
     padding-bottom: 10px;
-}
-.header__menu {
-    display: flex;
-    list-style-type: none;
+    &__menu {
+        display: flex;
+        list-style-type: none;
+    }
 }
 .menu-item {
-    margin: 0 15px;
+    margin: 0 5px;
+    padding: 5px;
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 5px;
 }
 .heading {
     margin: 10px auto;
@@ -37,12 +45,32 @@
     border: 1px solid #000;
     border-radius: 10px;
 }
+.card {
+    background-color: #eee;
+    &__box {
+        padding: 50px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__item {
+        background-color: whitesmoke;
+        width: ($width_site / 6) - $border_width * 6;
+        height: 150px;
+        border: $border_width solid #000;
+        border-radius: 5px;
+        margin: 15px;
+    }
+}
 .footer {
-    background-color: #222;
-}
-.footer__menu {
-    list-style-type: none;
-}
-.footer__menu-item {
-    color: RGBA(250, 250, 250, 0.8);
+    background-color: $footer_color;
+
+    &__menu {
+        list-style-type: none;
+    }
+
+    &__menu-item {
+        color: #eee;
+    }
 }
