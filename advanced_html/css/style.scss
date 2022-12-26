@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+$dark-color: #222222;
+$pink-color: #F1E4E6;
+$pink-text: #F16D7F;
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1172px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.pink-text {
+  color: $pink-text;
+}
+
+.header {
+  background-color: $dark-color;
+  padding: 18px 0;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.banner {
+  background-color: $pink-color;
+  margin-bottom: 65px;
+  &__content{
+    display: flex;
+    position: relative;
+
+    &__image {
+      width: 50%;
+      height: 100%;
+      text-align: right;
+      &__img{
+        width: 100%;
+        max-width: 800px;
+        max-height: 764px;
+      }
+    }
+    &__text{
+      display: flex;
+      padding-left: 60px;
+      align-self: center;
+      &__color{
+        width: 12px;
+        margin-right: 16px;
+        background-color: $pink-text;
+      }
+      &__heading {
+        &__header {
+          text-transform: uppercase;
+          color: $dark-color;
+          font-style: normal;
+          font-weight: 900;
+          font-size: 48px;
+          line-height: 58px;
+        }
+        &__paragraph {
+          color: $dark-color;
+          font-style: normal;
+          font-weight: 900;
+          font-size: 32px;
+          line-height: 39px;
+        }
+      }
+    }
+  }
+}
+
+.offer{
+  &-box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  &__women, &__men, &__kids {
+    min-height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30%;
+  }
+  &__women {
+    background-image: url("../img/offer-women.png");
+
+  }
+  &__men {
+    background-image: url("../img/offer-men.png") ;
+
+  }
+  &__kids {
+    background-image: url("../img/offer-kids.png");
+
+  }
+  &__accessories {
+    min-height: 200px;
+    background-image: url("../img/offer-accesories.png");
+    width: 100%;
+  }
+}
