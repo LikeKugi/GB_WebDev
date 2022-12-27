@@ -3,6 +3,9 @@
 $dark-color: #222222;
 $pink-color: #F1E4E6;
 $pink-text: #F16D7F;
+$dark-link: #6F6E6E;
+$banner-height: 764px;
+$mega-padding: 35px;
 
 
 
@@ -35,12 +38,64 @@ body {
 .header {
   background-color: $dark-color;
   padding: 18px 0;
-  &__nav {
+  position: relative;
+}
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  &__item {
+    display: inline-block;
+
   }
 }
+
+.mega{
+  &-box{
+    max-height: $banner-height;
+    width: 232px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: $mega-padding;
+    background-color: #FFFFFF;
+    z-index: 99;
+  }
+  &__close {
+    display: block;
+    margin-right: auto;
+    text-align: right;
+  }
+  &__title, &__link {
+    margin-bottom: 12px;
+  }
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+  }
+  &__link {
+    display: block;
+    padding-left: $mega-padding;
+    text-decoration: none;
+    color: $dark-link;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  &__main-title {
+    color: #000000;
+  }
+  &__subsection {
+    margin-bottom: 20px;
+  }
+  &__subsection-title {
+    color: $pink-text;
+  }
+}
+
 
 .banner {
   background-color: $pink-color;
@@ -48,7 +103,7 @@ body {
   &__content{
     display: flex;
     position: relative;
-
+    max-height: $banner-height;
     &__image {
       width: 50%;
       height: 100%;
@@ -56,7 +111,7 @@ body {
       &__img{
         width: 100%;
         max-width: 800px;
-        max-height: 764px;
+        max-height: $banner-height;
       }
     }
     &__text{
@@ -93,29 +148,46 @@ body {
   &-box {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
-  &__women, &__men, &__kids {
+  //&__women, &__men, &__kids {
+  //  min-height: 200px;
+  //  background-repeat: no-repeat;
+  //  background-size: contain;
+  //  width: 30%;
+  //  background: rgba(33, 22, 22, 0.7);
+  //}
+  //&__women {
+  //  background: url("../img/offer-women.png"), rgba(33, 22, 22, 0.7);
+  //
+  //}
+  &__men {
+    position: relative;
+    border: 1px solid blue;
+    background: url("../img/offer-men.png"), linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7))  ;
     min-height: 200px;
-    background-repeat: no-repeat;
-    background-size: contain;
     width: 30%;
   }
-  &__women {
-    background-image: url("../img/offer-women.png");
-
-  }
-  &__men {
-    background-image: url("../img/offer-men.png") ;
-
-  }
-  &__kids {
-    background-image: url("../img/offer-kids.png");
-
-  }
-  &__accessories {
-    min-height: 200px;
-    background-image: url("../img/offer-accesories.png");
+  &__men:before {
+    background-color: rgba(33, 22, 22, 0.7);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
     width: 100%;
+
+  }
+  //&__kids {
+  //  background: url("../img/offer-kids.png"), rgba(33, 22, 22, 0.7);
+  //
+  //}
+  //&__accessories {
+  //  min-height: 200px;
+  //  background: url("../img/offer-accesories.png"), rgba(33, 22, 22, 0.7);
+  //  width: 100%;
+  //}
+  &__image:before {
+    content: '';
+    background-color: rgba(33, 22, 22, 0.7);
   }
 }
