@@ -46,12 +46,22 @@ body {
     align-items: center;
   &__item {
     display: inline-block;
-
+    margin-right: 35px;
+    &__mega {
+      appearance: none;
+    }
+    &__mega:checked~.mega-box{
+      display: block;
+    }
+  }
+  &__item:last-child {
+    margin-right: 0;
   }
 }
 
 .mega{
   &-box{
+    display: none;
     max-height: $banner-height;
     width: 232px;
     position: absolute;
@@ -84,6 +94,9 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
+  }
+  &__link:hover {
+    color: $pink-text;
   }
   &__main-title {
     color: #000000;
@@ -124,8 +137,9 @@ body {
         background-color: $pink-text;
       }
       &__heading {
+        text-transform: uppercase;
         &__header {
-          text-transform: uppercase;
+
           color: $dark-color;
           font-style: normal;
           font-weight: 900;
@@ -146,48 +160,22 @@ body {
 
 .offer{
   &-box {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    &__top {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
   }
-  //&__women, &__men, &__kids {
-  //  min-height: 200px;
-  //  background-repeat: no-repeat;
-  //  background-size: contain;
-  //  width: 30%;
-  //  background: rgba(33, 22, 22, 0.7);
-  //}
-  //&__women {
-  //  background: url("../img/offer-women.png"), rgba(33, 22, 22, 0.7);
-  //
-  //}
-  &__men {
+  &-card {
+    box-sizing: border-box;
     position: relative;
-    border: 1px solid blue;
-    background: url("../img/offer-men.png"), linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7))  ;
-    min-height: 200px;
-    width: 30%;
   }
-  &__men:before {
+  &-card:before {
     background-color: rgba(33, 22, 22, 0.7);
     content: '';
     display: block;
     height: 100%;
     position: absolute;
     width: 100%;
-
-  }
-  //&__kids {
-  //  background: url("../img/offer-kids.png"), rgba(33, 22, 22, 0.7);
-  //
-  //}
-  //&__accessories {
-  //  min-height: 200px;
-  //  background: url("../img/offer-accesories.png"), rgba(33, 22, 22, 0.7);
-  //  width: 100%;
-  //}
-  &__image:before {
-    content: '';
-    background-color: rgba(33, 22, 22, 0.7);
   }
 }
