@@ -1,16 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-$dark-color: #222222;
-$pink-color: #F1E4E6;
-$pink-text: #F16D7F;
-$dark-link: #6F6E6E;
-$gray-description: #9F9F9F;
-$product-card-description: #5D5D5D;
-$product-card-background: #F8F8F8;
-$product-card-hover: rgba(58, 56, 56, 0.86);
-$dark-footer: #222224;
-$light-footer: #FBFBFB;
-$gray-footer-form: #E1E1E1;
+@import "vars_colors";
 
 $banner-height: 764px;
 $mega-padding: 35px;
@@ -18,8 +8,6 @@ $card-width: 360px;
 
 
 * {
-  margin: 0;
-  padding: 0;
   outline: none;
 }
 
@@ -206,6 +194,9 @@ body {
   &-card {
     box-sizing: border-box;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__image {
@@ -215,9 +206,6 @@ body {
 
   &__deal {
     position: absolute;
-    top: 25%;
-    right: 50%;
-    transform: translate(50%, 50%);
     text-align: center;
 
     &__top {

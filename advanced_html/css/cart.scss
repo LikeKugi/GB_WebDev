@@ -1,0 +1,176 @@
+@import "vars_colors";
+@import "text";
+
+.title {
+  text-transform: capitalize;
+  @include txt-norm(24px, 29px);
+}
+
+.cart {
+  &__header {
+    background-color: $registration-header-back;
+    padding: 60px 0;
+  }
+}
+
+.order {
+  padding: 95px 0 120px;
+  &-row {
+    justify-content: space-between;
+  }
+  &__btn {
+    border: 1px solid $border-color;
+    background-color: white;
+  }
+}
+
+.cards {
+  .item {
+    margin-bottom: 40px;
+    box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+    display: flex;
+    &__text {
+      width: 100%;
+    }
+    &__header {
+      box-sizing: border-box;
+      width: 100%;
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 22px;
+      padding-right: 28px;
+    }
+    &__title {
+      margin-bottom: 0;
+    }
+    &__txt {
+      @include txt-norm(22px, 26px);
+      margin-bottom: 5px;
+      .quantity {
+        display: inline-block;
+        margin-left: 25px;
+        box-sizing: border-box;
+        border: 1px solid $quantity-color;
+        padding: 1px 15px;
+
+      }
+    }
+    &__img-box {
+      max-height: 305px;
+      margin-right: 30px;
+    }
+    &__image {
+      max-height: inherit;
+    }
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.button {
+  padding: 15px 40px;
+  text-transform: capitalize;
+}
+
+.shipping {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 60px;
+  &__form {
+    margin-bottom: 60px;
+  }
+  &__title {
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    @include txt-thin(16px, 19px);
+    color: $dark-color;
+  }
+  &__btn {
+    padding: 10px 15px;
+    text-transform: capitalize;
+    @include txt-thin(11px, 13px);
+    background-color: white;
+    color: $border-color;
+    border: 1px solid $border-color;
+  }
+  &__input-field {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px 15px;
+    border: 1px solid $border-color;
+    @include txt-thin(13px, 16px);
+    &:active {
+      color: $description-color;
+    }
+    &:last-child {
+      margin-bottom: 25px;
+    }
+  }
+}
+.total {
+  box-sizing: border-box;
+  padding: 40px 30px;
+  background-color: $total-color;
+  min-width: 360px;
+  min-height: 214px;
+  &__price {
+    text-align: right;
+    .subtotal {
+      @include txt-norm(11px, 13px);
+      color: $border-color;
+      margin-right: 4px;
+      margin-bottom: 12px;
+      &__count {
+        margin-left: 25px;
+      }
+    }
+    .grandtotal {
+      @include txt-thin(16px, 19px);
+      color: $dark-color;
+      margin-right: 7px;
+      margin-bottom: 20px;
+      &__count {
+        margin-left: 25px;
+      }
+    }
+  }
+  &__checkout {
+    padding-top: 17px;
+    border-top: 1px solid $total-line;
+  }
+  &__btn {
+    display: block;
+    margin: 0 auto;
+    color: #FFFFFF;
+    background-color: $pink-text;
+    border: 1px solid transparent;
+    @include txt-thin(16px, 19px)
+  }
+
+}
+
+@media (max-width: 991px) {
+  .shipping {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 60px;
+    &__form {
+      margin-right: 20px;
+    }
+  }
+}
+@media (max-width: 625px) {
+  .shipping {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 60px;
+    &__form {
+      margin-right: 20px;
+    }
+  }
+}

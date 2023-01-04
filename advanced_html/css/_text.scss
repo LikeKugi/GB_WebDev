@@ -1,0 +1,15 @@
+.txt-pink {
+  color: $pink-text;
+}
+
+@mixin txt-norm($fs, $lh) {
+  font-weight: 400;
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin txt-thin($fs, $lh) {
+  font-weight: 300;
+  font-size: $fs;
+  line-height: $lh;
+}
