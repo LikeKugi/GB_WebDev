@@ -173,4 +173,45 @@
       margin-right: 20px;
     }
   }
+
+  h1.title {
+    text-align: center;
+  }
+
+  .cards {
+    .item {
+      margin-bottom: 32px;
+      box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.13);
+      &__header {
+        margin-bottom: 25px;
+        padding-top: 13px;
+        padding-right: 15px;
+      }
+      &__title {
+        @include txt-norm(16px, 19px);
+      }
+      &__txt {
+        @include txt-norm(14px, 17px);
+        margin-bottom: 5px;
+      }
+      &__img-box {
+        max-height: 188px;
+        margin-right: 15px;
+      }
+    }
+    .buttons {
+      @include txt-norm(12px, 14px);
+    }
+  }
+
+  .order {
+    padding: 40px 0 95px;
+    &-row {
+      padding: 0;
+    }
+    &__btn {
+      padding: 6px 9px;
+    }
+  }
+
 }
