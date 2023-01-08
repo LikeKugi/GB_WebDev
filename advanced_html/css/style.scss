@@ -6,8 +6,15 @@ $banner-height: 764px;
 $mega-padding: 35px;
 $card-width: 360px;
 
-
-* {
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
   outline: none;
 }
 
@@ -248,7 +255,7 @@ body {
   &-flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   &-card {

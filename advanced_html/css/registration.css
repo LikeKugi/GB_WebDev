@@ -1,0 +1,103 @@
+.reg-main__header {
+  background-color: #F8F3F4;
+  padding: 60px 0;
+}
+.reg-main__header__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.reg {
+  padding-top: 40px;
+  padding-bottom: 96px;
+  display: flex;
+  justify-content: space-between;
+}
+.reg__description {
+  width: 60%;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+.reg__description__title {
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+.reg__description__text {
+  margin-bottom: 22px;
+}
+.reg__description__list {
+  list-style-image: url("../icons/ul-icons.png");
+  list-style-position: inside;
+}
+.reg__description__item {
+  margin-bottom: 16px;
+}
+.reg__description__item:before {
+  content: "";
+  margin-right: 23px;
+}
+.reg__description-text {
+  max-width: 360px;
+  margin-bottom: 39px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+.reg__form__name__title {
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+.reg__form__sex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 33px;
+}
+.reg__radio-text {
+  margin-right: 20px;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+}
+.reg__radio-text:last-child {
+  margin-right: 0;
+}
+.reg__join-button {
+  display: inline-block;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  padding: 16px 25px;
+  background-color: #F16D7F;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.input-txt {
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  display: block;
+  width: 360px;
+  height: 45px;
+  padding: 14px;
+}
+.input-txt::placeholder {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+input[type=radio] {
+  margin-right: 10px;
+}
+
+.join-txt {
+  margin-right: 10px;
+}/*# sourceMappingURL=registration.css.map */

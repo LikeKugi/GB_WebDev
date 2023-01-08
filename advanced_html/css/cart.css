@@ -1,0 +1,230 @@
+.txt-pink {
+  color: #F16D7F;
+}
+
+.title {
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.cart__header {
+  background-color: #F8F3F4;
+  padding: 60px 0;
+}
+
+.order {
+  padding: 95px 0 120px;
+}
+.order-row {
+  justify-content: space-between;
+}
+.order__btn {
+  border: 1px solid #A4A4A4;
+  background-color: white;
+}
+
+.cards .item {
+  margin-bottom: 40px;
+  box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+  display: flex;
+}
+.cards .item__text {
+  width: 100%;
+}
+.cards .item__header {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 22px;
+  padding-right: 28px;
+}
+.cards .item__title {
+  margin-bottom: 0;
+}
+.cards .item__txt {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 5px;
+}
+.cards .item__txt .quantity {
+  display: inline-block;
+  margin-left: 25px;
+  box-sizing: border-box;
+  border: 1px solid #EAEAEA;
+  padding: 1px 15px;
+}
+.cards .item__img-box {
+  max-height: 305px;
+  margin-right: 30px;
+}
+.cards .item__image {
+  max-height: inherit;
+}
+.cards .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  padding: 15px 40px;
+  text-transform: capitalize;
+}
+
+.shipping {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 60px;
+}
+.shipping__form {
+  margin-bottom: 60px;
+}
+.shipping__title {
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+.shipping__btn {
+  padding: 10px 15px;
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  background-color: white;
+  color: #A4A4A4;
+  border: 1px solid #A4A4A4;
+}
+.shipping__input-field {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px 15px;
+  border: 1px solid #A4A4A4;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+}
+.shipping__input-field:active {
+  color: #B1B1B1;
+}
+.shipping__input-field:last-child {
+  margin-bottom: 25px;
+}
+
+.total {
+  box-sizing: border-box;
+  padding: 40px 30px;
+  background-color: #F5F3F3;
+  min-width: 360px;
+  min-height: 214px;
+}
+.total__price {
+  text-align: right;
+}
+.total__price .subtotal {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #A4A4A4;
+  margin-right: 4px;
+  margin-bottom: 12px;
+}
+.total__price .subtotal__count {
+  margin-left: 25px;
+}
+.total__price .grandtotal {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  margin-right: 7px;
+  margin-bottom: 20px;
+}
+.total__price .grandtotal__count {
+  margin-left: 25px;
+}
+.total__checkout {
+  padding-top: 17px;
+  border-top: 1px solid #E2E2E2;
+}
+.total__btn {
+  display: block;
+  margin: 0 auto;
+  color: #FFFFFF;
+  background-color: #F16D7F;
+  border: 1px solid transparent;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+@media (max-width: 991px) {
+  .shipping {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 60px;
+  }
+  .shipping__form {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 625px) {
+  .shipping {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 60px;
+  }
+  .shipping__form {
+    margin-right: 20px;
+  }
+  h1.title {
+    text-align: center;
+  }
+  .cards .item {
+    margin-bottom: 32px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.13);
+  }
+  .cards .item__header {
+    margin-bottom: 25px;
+    padding-top: 13px;
+    padding-right: 15px;
+  }
+  .cards .item__title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .cards .item__txt {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 5px;
+  }
+  .cards .item__img-box {
+    max-height: 188px;
+    margin-right: 15px;
+  }
+  .cards .buttons {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .order {
+    padding: 40px 0 95px;
+  }
+  .order-row {
+    padding: 0;
+  }
+  .order__btn {
+    padding: 6px 9px;
+  }
+}/*# sourceMappingURL=cart.css.map */
