@@ -1,0 +1,105 @@
+@import "base";
+@import "colors";
+@import "text";
+
+body {
+  background-color: $dark-color;
+}
+
+.header {
+  margin-bottom: 50px;
+  padding: 15px 0;
+  background-color: $dark-gray;
+
+  &__title {
+    color: $white;
+    @include txt-thin(1.5rem, 2.2rem);
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.nav {
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    color: $blue;
+    padding: 5px 15px;
+    margin-right: 30px;
+    border: 1px solid transparent;
+    &:hover {
+      background-color: $light-gray;
+      border: 1px solid $dark-color;
+      border-radius: 5px;
+      color: $blue-dark;
+    }
+  }
+  &__description {
+    @include txt-norm(1.2rem, 1.4rem);
+  }
+}
+
+.content {
+  background-color: $dark-gray;
+  border: 1px solid $gray;
+  border-radius: 0.5rem;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fahrenheit, .celsius {
+  margin-bottom: 40px;
+  &__query {
+    width: 40%;
+  }
+
+  &__result {
+    padding: 15px;
+  }
+
+  &__deg {
+    color: $white;
+    @include txt-norm(4rem, 4.5rem);
+  }
+}
+
+.query {
+  &__label {
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__input {
+    margin-left: 2rem;
+    padding: .3rem;
+    outline: none;
+    color: $white;
+    background-color: $gray;
+    text-transform: capitalize;
+    max-width: 150px;
+
+    &::placeholder {
+      color: $light-gray;
+    }
+  }
+}
+
+.greeting {
+  &__text {
+    color: $white;
+    @include txt-thin(1.1rem, 1.2rem);
+  }
+}
+.footer {
+  padding: 20px 0;
+  &__text {
+    color: $light-gray;
+    @include txt-thin(1.2rem, 1.4rem);
+  }
+}

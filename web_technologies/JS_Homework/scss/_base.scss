@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.box {
+  &-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  &-content {
+    flex-grow: 1;
+  }
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}

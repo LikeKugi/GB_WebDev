@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  letter-spacing: .2rem;
+  line-height: 18px;
+}
+
+@mixin txt-norm($fs, $lh) {
+  font-weight: 400;
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin txt-thin($fs, $lh) {
+  font-weight: 300;
+  font-size: $fs;
+  line-height: $lh;
+}
