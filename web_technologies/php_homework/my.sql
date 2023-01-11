@@ -1,28 +1,39 @@
--- create
-CREATE TABLE students (
-                          Id INTEGER PRIMARY KEY AUTO_INCREMENT,
-                          name TEXT NOT NULL,
-                          age INTEGER NOT NULL,
-                          address TEXT NOT NULL
+-- cities
+CREATE TABLE cities (
+                        city_id INTEGER PRIMARY KEY AUTO_INCREMENT,
+                        address TEXT NOT NULL
 );
 
--- insert
-INSERT INTO students (name, age, address)
-VALUES ('Clark', 1995, 'Moscow'),
-       ('Dave', 1996, 'St. Petersburg'),
-       ('Ava', 1998, 'Kirov'),
-       ('Tom', 1990, 'Samara'),
-       ('Jerry', 2005, 'Moscow'),
-       ('Bill', 2003, 'Moscow'),
-       ('Dominica', 2004, 'Volkhov'),
-       ('Rose', 1999, 'Tikhvin'),
-       ('Natalie', 2000, 'Moscow'),
-       ('Aurora', 2001, 'St. Petersburg');
+INSERT INTO cities (address)
+VALUES ('Moscow'), ('St. Petersburg'), ('Kirov'), ('Samara'), ('Volkhov'), ('Tikhvin');
+
+-- students
+
+CREATE TABLE students (
+                          student_id INTEGER PRIMARY KEY AUTO_INCREMENT,
+                          student_name TEXT NOT NULL,
+                          student_age INTEGER NOT NULL,
+                          city_id int,
+                          FOREIGN KEY (city_id) REFERENCES cities (city_id)
+);
+
+INSERT INTO students (student_name, student_age, city_id)
+VALUES ('Clark', 1995, 1),
+       ('Dave', 1996, 2),
+       ('Ava', 1998, 3),
+       ('Tom', 1990, 4),
+       ('Jerry', 2005, 1),
+       ('Bill', 2003, 1),
+       ('Dominica', 2004, 5),
+       ('Rose', 1999, 6),
+       ('Natalie', 2000, 1),
+       ('Aurora', 2001, 2);
 
 
 -- fetch
-SELECT name as 'Имя'
-FROM students
+
+SELECT student_name as 'Имя'
+FROM students inner join cities USING (city_id)
 WHERE address = 'Moscow'
-  AND (2023 - age) BETWEEN 18 AND 29
-ORDER BY age;
+  AND (2023 - student_age) BETWEEN 18 AND 29
+ORDER BY student_age;
