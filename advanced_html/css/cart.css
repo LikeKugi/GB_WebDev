@@ -1,5 +1,9 @@
 .txt-pink {
-  color: #F16D7F;
+  color: #F16D7F !important;
+}
+
+.bolder {
+  font-weight: 600 !important;
 }
 
 .title {
@@ -227,4 +231,6 @@
   .order__btn {
     padding: 6px 9px;
   }
-}/*# sourceMappingURL=cart.css.map */
+}
+
+/*# sourceMappingURL=cart.css.map */

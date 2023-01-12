@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+.txt-pink {
+  color: #F16D7F !important;
+}
+
+.bolder {
+  font-weight: 600 !important;
+}
+
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -23,6 +31,35 @@ body {
 }
 .content-main {
   flex-grow: 1;
+}
+.content-main__header {
+  background-color: #F8F3F4;
+  padding: 60px 0;
+}
+.content-main__header__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.breadlink {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #636363;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+}
+.breadlink:hover {
+  color: #F16D7F;
+}
+.breadlink_active {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #F16D7F;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
 }
 
 .container {
@@ -471,6 +508,9 @@ body {
   }
 }
 @media (max-width: 375px) {
+  .container {
+    padding: 0 8px;
+  }
   .nav__login, .nav__cart {
     display: none;
   }
@@ -497,9 +537,12 @@ body {
     margin-bottom: 60px;
   }
   .footer__bottom__content {
+    padding-top: 40px;
     flex-direction: column-reverse;
   }
   .footer__socials {
     margin-bottom: 50px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -7,8 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="fonts/icofont/icofont.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/catalog.css">
 
     <title>Main | The Brand</title>
 </head>
@@ -81,12 +84,134 @@
 
     <div class="content-main">
 
+        <header class="catalog__header content-main__header">
+            <div class="container catalog-flex">
+                <h1 class="content-main__header__title pink-text">NEW ARRIVALS</h1>
+
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#" class="breadlink">home</a></li>
+                        <li class="breadcrumb-item"><a href="#" class="breadlink">men</a></li>
+                        <li class="breadcrumb-item active" aria-current="page"><span
+                                class="breadlink breadlink_active txt-pink">new arrivals</span></li>
+                    </ol>
+                </nav>
+            </div>
+        </header>
+
         <section class="product">
             <div class="container">
 
-                <h3 class="product__heading">Featured Items</h3>
+                <div class="catalog-menu">
 
-                <p class="product__description">Shop for items based on what we featured in this week</p>
+                    <div class="catalog-menu__filter box-menu">
+                        <a href="#" class="catalog-menu__link">
+                            <span class="catalog-menu__text bolder" id="filter-text">filter</span>
+                            <img src="icons/filter.svg" alt="filter" class="catalog-menu__image">
+                        </a>
+                        <div class="box_hidden filter-box">
+                            <details>
+                                <summary class="catalog-menu__link">
+                                    <div class="preffix"></div>
+                                    CATEGORY
+                                </summary>
+                                <a href="#" class="catalog-menu__link">Accessories</a>
+                                <a href="#" class="catalog-menu__link">Accessories</a>
+                                <a href="#" class="catalog-menu__link">Accessories</a>
+                                <a href="#" class="catalog-menu__link">Accessories</a>
+                                <a href="#" class="catalog-menu__link">Accessories</a>
+                                <a href="#" class="catalog-menu__link">Accessories</a>
+                                <a href="#" class="catalog-menu__link">Accessories</a>
+                                <a href="#" class="catalog-menu__link">Accessories</a>
+                                <a href="#" class="catalog-menu__link">Accessories</a>
+                                <a href="#" class="catalog-menu__link">Accessories</a>
+                            </details>
+                            <details>
+                                <summary class="catalog-menu__link">
+                                    <div class="preffix"></div>
+                                    CATEGORY
+                                </summary>
+                                <a href="#" class="catalog-menu__link">Accessories</a>
+                                <a href="#" class="catalog-menu__link">Accessories</a>
+                                <a href="#" class="catalog-menu__link">Accessories</a>
+                                <a href="#" class="catalog-menu__link">Accessories</a>
+                                <a href="#" class="catalog-menu__link">Accessories</a>
+                                <a href="#" class="catalog-menu__link">Accessories</a>
+                                <a href="#" class="catalog-menu__link">Accessories</a>
+                                <a href="#" class="catalog-menu__link">Accessories</a>
+                                <a href="#" class="catalog-menu__link">Accessories</a>
+                                <a href="#" class="catalog-menu__link">Accessories</a>
+                            </details>
+                            <details>
+                                <summary class="catalog-menu__link">
+                                    <div class="preffix"></div>
+                                    CATEGORY
+                                </summary>
+                                <a href="#" class="catalog-menu__link">Accessories</a>
+                                <a href="#" class="catalog-menu__link">Accessories</a>
+                                <a href="#" class="catalog-menu__link">Accessories</a>
+                                <a href="#" class="catalog-menu__link">Accessories</a>
+                                <a href="#" class="catalog-menu__link">Accessories</a>
+                                <a href="#" class="catalog-menu__link">Accessories</a>
+                                <a href="#" class="catalog-menu__link">Accessories</a>
+                                <a href="#" class="catalog-menu__link">Accessories</a>
+                                <a href="#" class="catalog-menu__link">Accessories</a>
+                                <a href="#" class="catalog-menu__link">Accessories</a>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="catalog-menu__expand">
+                        <div class="catalog-menu__item box-menu">
+                            <a href="#" class="catalog-menu__link">
+                                TRENDING NOW
+                                <img src="icons/details.png" alt="trending now">
+                            </a>
+                            <div class="box_hidden">
+                                <label for="xs-tr" class="box_hidden__label catalog-menu__link"><input type="checkbox" name="trend" id="xs-tr"
+                                                                                 class="box_hidden__check">xs</label>
+                                <label for="s-tr" class="box_hidden__label catalog-menu__link"><input type="checkbox" name="trend" id="s-tr"
+                                                                                class="box_hidden__check">s</label>
+                                <label for="m-tr" class="box_hidden__label catalog-menu__link"><input type="checkbox" name="trend" id="m-tr"
+                                                                                class="box_hidden__check">m</label>
+                                <label for="l-tr" class="box_hidden__label catalog-menu__link"><input type="checkbox" name="trend" id="l-tr"
+                                                                                class="box_hidden__check">l</label>
+                            </div>
+                        </div>
+                        <div class="catalog-menu__item box-menu">
+                            <a href="#" class="catalog-menu__link">
+                                SIZE
+                                <img src="icons/details.png" alt="size">
+                            </a>
+                            <div class="box_hidden">
+                                <label for="xs" class="box_hidden__label catalog-menu__link"><input type="checkbox" name="size" id="xs"
+                                                                                 class="box_hidden__check">xs</label>
+                                <label for="s" class="box_hidden__label catalog-menu__link"><input type="checkbox" name="size" id="s"
+                                                                                class="box_hidden__check">s</label>
+                                <label for="m" class="box_hidden__label catalog-menu__link"><input type="checkbox" name="size" id="m"
+                                                                                class="box_hidden__check">m</label>
+                                <label for="l" class="box_hidden__label catalog-menu__link"><input type="checkbox" name="size" id="l"
+                                                                                class="box_hidden__check">l</label>
+                            </div>
+                        </div>
+                        <div class="catalog-menu__item box-menu">
+                            <a href="#" class="catalog-menu__link">
+                                PRICE
+                                <img src="icons/details.png" alt="price">
+                            </a>
+                            <div class="box_hidden">
+                                <label for="xs-pr" class="box_hidden__label catalog-menu__link"><input type="checkbox" name="price" id="xs-pr"
+                                                                                 class="box_hidden__check">xs</label>
+                                <label for="s-pr" class="box_hidden__label catalog-menu__link"><input type="checkbox" name="price" id="s-pr"
+                                                                                class="box_hidden__check">s</label>
+                                <label for="m-pr" class="box_hidden__label catalog-menu__link"><input type="checkbox" name="price" id="m-pr"
+                                                                                class="box_hidden__check">m</label>
+                                <label for="l-pr" class="box_hidden__label catalog-menu__link"><input type="checkbox" name="price" id="l-pr"
+                                                                                class="box_hidden__check">l</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="product-flex">
 
@@ -254,8 +379,24 @@
 
                 </div>
 
-                <div class="browse">
-                    <a href="#" class="browse__link pink-text">Browse All Product</a>
+                <div class="catalog-pages row">
+                    <nav class="catalog-pages__list" aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item">
+                                <a class="page-link catalog-pages__link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link catalog-pages__link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link catalog-pages__link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link catalog-pages__link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link catalog-pages__link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
 
             </div>
@@ -318,5 +459,7 @@
     </footer>
 
 </div>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </body>
 </html>

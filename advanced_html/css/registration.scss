@@ -61,6 +61,7 @@
   }
 
   &__form {
+    margin-right: 22px;
     &__name {
       &__title {
         margin-bottom: 20px;
@@ -117,4 +118,28 @@ input[type="radio"] {
 }
 .join-txt {
   margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .reg {
+    &__description {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+}
+
+@media (max-width: 625px) {
+  .reg {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    &__form {
+      margin-bottom: 55px;
+    }
+    &__description {
+      width: 100%;
+      margin-bottom: 95px;
+    }
+  }
 }

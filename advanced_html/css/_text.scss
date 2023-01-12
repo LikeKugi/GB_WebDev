@@ -1,5 +1,9 @@
 .txt-pink {
-  color: $pink-text;
+  color: $pink-text !important;
+}
+
+.bolder {
+  font-weight: 600 !important;
 }
 
 @mixin txt-norm($fs, $lh) {
@@ -12,4 +16,16 @@
   font-weight: 300;
   font-size: $fs;
   line-height: $lh;
+}
+
+@mixin txt-bold($fs, $lh) {
+  font-weight: 700;
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin txt-filter-menu ($fw) {
+  font-weight: $fw;
+  font-size: 14px;
+  line-height: 17px;
 }

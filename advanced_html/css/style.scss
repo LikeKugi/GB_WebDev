@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 @import "vars_colors";
+@import "text";
 
 $banner-height: 764px;
 $mega-padding: 35px;
@@ -30,6 +31,29 @@ body {
   }
   &-main {
     flex-grow: 1;
+    &__header {
+      background-color: $registration-header-back;
+      padding: 60px 0;
+      &__title {
+        @include txt-norm(24px, 29px);
+      }
+    }
+  }
+}
+
+.breadlink {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $bread-color;
+  @include txt-thin(14px, 17px);
+  &:hover {
+    color: $pink-text;
+  }
+  &_active {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $pink-text;
+    @include txt-bold(14px, 17px);
   }
 }
 
@@ -583,6 +607,9 @@ body {
 }
 
 @media (max-width: 375px) {
+  .container {
+    padding: 0 8px;
+  }
   .nav {
     &__login, &__cart {
       display: none;
@@ -625,6 +652,7 @@ body {
 
     &__bottom {
       &__content {
+        padding-top: 40px;
         flex-direction: column-reverse;
       }
     }

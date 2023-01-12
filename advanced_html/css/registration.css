@@ -47,6 +47,9 @@
   line-height: 16px;
   color: #B1B1B1;
 }
+.reg__form {
+  margin-right: 22px;
+}
 .reg__form__name__title {
   margin-bottom: 20px;
   font-weight: 300;
@@ -100,4 +103,27 @@ input[type=radio] {
 
 .join-txt {
   margin-right: 10px;
-}/*# sourceMappingURL=registration.css.map */
+}
+
+@media (max-width: 768px) {
+  .reg__description {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+@media (max-width: 625px) {
+  .reg {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+  }
+  .reg__form {
+    margin-bottom: 55px;
+  }
+  .reg__description {
+    width: 100%;
+    margin-bottom: 95px;
+  }
+}
+
+/*# sourceMappingURL=registration.css.map */
