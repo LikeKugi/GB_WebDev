@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<users>
+    <user>
+        <age>30</age>
+        <birthplace>Москва</birthplace>
+        <name>Иван</name>
+        <patronymic>Иванович</patronymic>
+        <phone>+7 926 766 48 48</phone>
+        <surname>Иванов</surname>
+    </user>
+</users>

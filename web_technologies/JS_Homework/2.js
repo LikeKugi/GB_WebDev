@@ -9,4 +9,4 @@ userName.addEventListener('change', function () {
         text = firstLetter + remainingLetters;
     }
     greetingText.innerHTML = text;
-})
+});
