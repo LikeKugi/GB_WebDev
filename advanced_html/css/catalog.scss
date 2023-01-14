@@ -20,8 +20,6 @@
     }
     &__text {
       text-transform: uppercase;
-      color: $dark-link;
-      @include txt-filter-menu(400);
     }
     &__expand {
       margin: 0 auto;

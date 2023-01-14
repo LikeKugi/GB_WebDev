@@ -199,7 +199,7 @@ body {
 .offer-box__top {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  gap: 2%;
 }
 .offer-card {
   box-sizing: border-box;
@@ -207,10 +207,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2.5%;
 }
 .offer__image {
-  max-width: 100%;
+  width: 100%;
+  min-height: 100px;
   filter: brightness(0.37) saturate(120%);
+  object-fit: cover;
 }
 .offer__deal {
   position: absolute;
@@ -268,6 +271,9 @@ body {
   display: block;
   text-decoration: none;
 }
+.product-card__link:hover {
+  color: inherit;
+}
 .product-card__pic {
   display: block;
   margin: 0 auto 25px auto;
@@ -312,6 +318,13 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
+  transition: all 0.2s;
+}
+.product-card__add__link:hover {
+  color: #FFFFFF;
+  -webkit-box-shadow: 0 0 8px 5px rgba(255, 255, 255, 0.25);
+  -moz-box-shadow: 0 0 8px 5px rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 8px 5px rgba(255, 255, 255, 0.25);
 }
 .product-card__add__cart {
   margin-right: 11px;

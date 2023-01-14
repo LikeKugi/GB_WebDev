@@ -218,7 +218,7 @@ body {
     &__top {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 30px;
+      gap: 2%;
     }
   }
 
@@ -228,11 +228,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2.5%;
   }
 
   &__image {
-    max-width: 100%;
+    width: 100%;
+    min-height: 100px;
     filter: brightness(0.37) saturate(120%);
+    object-fit: cover;
   }
 
   &__deal {
@@ -301,6 +304,10 @@ body {
     &__link {
       display: block;
       text-decoration: none;
+      &:hover{
+        color: inherit;
+      }
+
     }
 
     &__pic {
@@ -353,6 +360,13 @@ body {
         font-size: 14px;
         line-height: 17px;
         color: #FFFFFF;
+        transition: all .2s;
+        &:hover {
+          color: #FFFFFF;
+          -webkit-box-shadow: 0 0 8px 5px rgba(255, 255, 255, 0.25);
+          -moz-box-shadow: 0 0 8px 5px rgba(255, 255, 255, 0.25);
+          box-shadow: 0 0 8px 5px rgba(255, 255, 255, 0.25);
+        }
       }
 
       &__cart {
