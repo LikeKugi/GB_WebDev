@@ -1,5 +1,5 @@
 .txt-pink {
-  color: #F16D7F !important;
+  color: #F16D7F;
 }
 
 .bolder {
@@ -27,6 +27,10 @@
 .order__btn {
   border: 1px solid #A4A4A4;
   background-color: white;
+}
+.order__btn:hover {
+  background-color: #F16D7F;
+  color: #FFFFFF;
 }
 
 .cards .item {
@@ -105,6 +109,10 @@
   background-color: white;
   color: #A4A4A4;
   border: 1px solid #A4A4A4;
+}
+.shipping__btn:hover {
+  background-color: #F16D7F;
+  color: #FFFFFF;
 }
 .shipping__input-field {
   width: 100%;

@@ -10,13 +10,15 @@
       align-self: flex-start;
     }
     &__link {
+      position: relative;
       color: $dark-link;
       text-decoration: none;
       display: block;
+      z-index: 100;
       &:hover {
         color: $pink-text;
-      }
 
+      }
     }
     &__text {
       text-transform: uppercase;
@@ -32,45 +34,74 @@
       }
     }
   }
-
   &-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  &-pages {
-    display: inline-block;
+}
 
-    &__list {
-      margin: 0 auto;
-    }
+.b-pagination-outer {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
 
-    &__link {
-      color: $pagination-color !important;
+}
+#border-pagination {
+  margin: 0 auto;
+  padding: 0.5rem;
+  text-align: center;
+  border: 1px solid $summary-bottom;
+  border-radius: 5px;
 
-      &:hover {
-        color: $pink-text !important;
+  & li {
+    display: inline;
+
+    & a {
+      display: block;
+      text-decoration: none;
+      color: $pagination-color;
+      padding: 5px 10px;
+      float: left;
+
+      -webkit-transition: background-color 0.4s;
+      transition: background-color 0.4s;
+
+      &.active {
+        color: $prefix-color;
+      }
+      &:hover:not(.active) {
+        color: $prefix-color;
       }
     }
   }
 }
+
 .filter-box {
   width: 360px;
+  padding-top: 25px !important;
 }
 .box {
   &-menu {
     position: relative;
+
     &:hover .box_hidden {
       display: block;
       z-index: 99;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    &:hover .filter-box {
+      margin-top: -25px;
+      margin-left: -10px;
     }
   }
   &_hidden {
     background-color: #FFFFFF;
     display: none;
     position: absolute;
-    padding: 13px 15px;
+    padding: 13px 15px 13px 5px;
     min-width: 80px;
     &__label {
       text-transform: uppercase;

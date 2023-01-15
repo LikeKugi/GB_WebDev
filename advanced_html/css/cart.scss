@@ -21,6 +21,10 @@
   &__btn {
     border: 1px solid $border-color;
     background-color: white;
+    &:hover {
+      background-color: $pink-text;
+      color: #FFFFFF;
+    }
   }
 }
 
@@ -95,6 +99,10 @@
     background-color: white;
     color: $border-color;
     border: 1px solid $border-color;
+    &:hover {
+      background-color: $pink-text;
+      color: #FFFFFF;
+    }
   }
   &__input-field {
     width: 100%;

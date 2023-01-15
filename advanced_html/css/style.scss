@@ -17,6 +17,7 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit;
   outline: none;
+  transition: all .2s;
 }
 
 body {
@@ -41,6 +42,31 @@ body {
   }
 }
 
+.button {
+  &_pink {
+    background-color: $pink-text;
+    border: 1px solid $pink-text;
+    color: #FFFFFF;
+    &:hover {
+      border: 1px solid $pink-text;
+      color: $pink-text;
+      background-color: #FFFFFF;
+    }
+  }
+}
+
+
+.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  li {
+    display: inline;
+    &+li:before {
+      padding: 8px;
+      content: "/\00a0";
+    }
+  }
+}
 .breadlink {
   text-decoration: none;
   text-transform: uppercase;
@@ -64,9 +90,6 @@ body {
   padding: 0 16px;
 }
 
-.pink-text {
-  color: $pink-text;
-}
 
 .header {
   background-color: $dark-color;
@@ -379,16 +402,21 @@ body {
 
 .browse {
   margin: 0 auto;
-  width: 211px;
-  padding: 13px 38px;
-  border: 1px solid $pink-text;
   text-align: center;
 
   &__link {
+    display: inline-block;
+    width: 211px;
+    padding: 1rem;
+    border: 1px solid $pink-text;
     text-decoration: none;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+    &:hover, &:active {
+      background-color: $pink-text;
+      color: #FFFFFF;
+    }
   }
 }
 
