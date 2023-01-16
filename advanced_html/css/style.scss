@@ -34,10 +34,15 @@ body {
     flex-grow: 1;
     &__header {
       background-color: $registration-header-back;
-      padding: 60px 0;
+      padding: 50px 0;
       &__title {
         @include txt-norm(24px, 29px);
       }
+    }
+    &-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
   }
 }

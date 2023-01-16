@@ -1,0 +1,111 @@
+@import "vars_colors";
+@import "text";
+
+.supply {
+  &-carousel {
+    position: relative;
+    background-color: $supply-background;
+    border-bottom: 1px solid $quantity-color;
+    padding: 10px 0 40px;
+  }
+  &__image {
+    margin: 0 auto;
+    max-width: max-content;
+    &-nav {
+      position: absolute;
+      top: calc(50% - 50px);
+
+      background-color: $supply-nav;
+    }
+  }
+
+  &__prev {
+    left: 0;
+  }
+  &__next {
+    right: 0;
+  }
+  &-description {
+    position: relative;
+    padding-bottom: 120px;
+  }
+
+  &__description {
+    z-index: 20;
+    background-color: #FFFFFF;
+    border: 1px solid $quantity-color;
+    padding: 64px 0;
+    margin-top: -50px;
+    text-align: center;
+  }
+
+  &__text {
+    @include txt-thin(14px, 17px);
+    &_name {
+      @include txt-thin(18px, 22px);
+    }
+    &_price {
+      @include txt-thin(24px, 29px);
+    }
+  }
+
+  &__divider {
+    max-width: 641px;
+    margin: 0 auto;
+    border-bottom: 1px solid $quantity-color;
+  }
+}
+
+.description {
+  max-width: 640px;
+  margin: 0 auto;
+  padding-bottom: 65px;
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  &__divider {
+    width: 63px;
+    margin: 0 auto 12px;
+    border-bottom: 3px solid $prefix-color;
+  }
+  &__name {
+    text-transform: uppercase;
+    margin-bottom: 48px;
+    color: $supply-name;
+  }
+  &__text {
+    color: $supply-text;
+    margin-bottom: 2rem;
+  }
+}
+
+.arrow {
+  width: 20px;
+  height: 20px;
+  border-bottom: 5px solid $dark-color;
+  border-right: 5px solid $dark-color;
+  &_left {
+    transform: rotate(135deg);
+  }
+  &_right {
+    transform: rotate(-45deg);
+  }
+
+  &__link {
+    display: block;
+    padding: 20px 15px;
+    &:hover{
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    &:active {
+      outline: solid $product-card-hover;
+    }
+    &:hover .arrow {
+      border-bottom: 5px solid $pink-text;
+      border-right: 5px solid $pink-text;
+
+    }
+  }
+}

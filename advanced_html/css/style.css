@@ -36,12 +36,17 @@ body {
 }
 .content-main__header {
   background-color: #F8F3F4;
-  padding: 60px 0;
+  padding: 50px 0;
 }
 .content-main__header__title {
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
+}
+.content-main-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .button_pink {
