@@ -1,5 +1,6 @@
 @import "vars_colors";
 @import "text";
+@import "box_hidden";
 
 .supply {
   &-carousel {
@@ -53,6 +54,44 @@
     max-width: 641px;
     margin: 0 auto;
     border-bottom: 1px solid $quantity-color;
+  }
+
+  &-menu {
+    margin: 5% 2%;
+    display: flex;
+    align-items: center;
+
+    &__link {
+      position: relative;
+      color: $dark-link;
+      text-decoration: none;
+      display: block;
+      z-index: 100;
+      &:hover {
+        color: $pink-text;
+
+      }
+    }
+    &__expand {
+      margin: 0 auto;
+      padding: 65px 0;
+      display: flex;
+      justify-content: center;
+    }
+    &__item {
+      margin-right: 20px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__browse {
+    vertical-align: center;
+    &-link:before {
+      content: url("../icons/pink-cart.svg");
+      margin-right: 10px;
+    }
   }
 }
 

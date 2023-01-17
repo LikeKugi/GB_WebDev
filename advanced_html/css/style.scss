@@ -422,6 +422,9 @@ body {
       background-color: $pink-text;
       color: #FFFFFF;
     }
+    &:hover &_txt, &:active &_txt{
+      color: #FFFFFF;
+    }
   }
 }
 

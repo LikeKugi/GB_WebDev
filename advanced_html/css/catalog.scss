@@ -1,5 +1,6 @@
 @import "vars_colors";
 @import "text";
+@import "box_hidden";
 
 .catalog {
   &-menu {
@@ -83,37 +84,7 @@
   width: 360px;
   padding-top: 50px !important;
 }
-.box {
-  &-menu {
-    position: relative;
 
-    &:hover .box_hidden {
-      display: block;
-      z-index: 99;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-    &:hover .filter-box {
-      margin-top: -40px;
-      margin-left: -10px;
-    }
-  }
-  &_hidden {
-    background-color: #FFFFFF;
-    display: none;
-    position: absolute;
-    padding: 13px 15px 13px 5px;
-    min-width: 80px;
-    &__label {
-      text-transform: uppercase;
-      display: block;
-      padding-top: 0.5rem;
-      padding-left: 0.5rem;
-    }
-    &__check {
-      margin-right: 0.5rem;
-    }
-  }
-}
 .preffix {
   display: inline-block;
   height: 37px;

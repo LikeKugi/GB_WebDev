@@ -374,6 +374,9 @@ body {
   background-color: #F16D7F;
   color: #FFFFFF;
 }
+.browse__link:hover .browse__link_txt, .browse__link:active .browse__link_txt {
+  color: #FFFFFF;
+}
 
 .discount {
   background-color: #222224;
